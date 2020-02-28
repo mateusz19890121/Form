@@ -1,0 +1,6 @@
+1. W pliku index.html załaduj plik "style.css" znajdujący się w folderze "style" oraz plik "script.js" z folderu "js"
+2. Zaimportuj do projektu czcionkę o nazwie "Lato" (np. z google fonts) i użyj jej w projekcie
+3. Spraw by, po kliknięciu w tekst: "I have read and agree to the Terms and Conditions and Privacy Policy" zaznaczał się odpowiedni checkbox
+4. W polu select ustaw wartość "Other", jako wartość domyślną
+5. Stwórz funkcję w JavaScript (możesz użyć jQuery), która po wciśnięciu przycisku "Submit" wyświetli element o id "result" z wartościami przekazanymi z formularza
+6. Ostyluj formularz

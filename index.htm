@@ -1,0 +1,141 @@
+<!------------------------->
+<!------ POWODZENIA ------->
+<!------------------------->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Form</title>
+  </head>
+  <body>
+    <header>
+    </header>
+    <div class="container">
+    <form action="insert.php" method="POST" id="form">
+      <div class="row name__row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name"/>
+      </div>
+      <div class="row surname__row">
+        <label for="surname">Surname</label>
+        <input type="text" id="surname" name="surname"/>
+      </div>
+      <div class="row email__row">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email"/>
+      </div>
+      <div class="row telephone__row">
+        <label for="telephone">Telephone</label>
+        <div class="telephoneInputs">
+        <select selected="number" class="prefix" name="prefix">
+          <option value="other">Other</option>
+          <option value="48">+48</option>
+          <option value="44">+44</option>
+          <option value="49">+49</option>
+          <option value="1">+1</option>
+        </select>
+        <input type="number" class="telephone" name="telephone"/>
+      </div>
+      </div>
+      <div class="row birth__row">
+        <label for="birth">Date of Birth</label>
+        <input type="date" id="birth" name="birthDate"/>
+      </div>
+    
+      <div class="row height__row">
+        <label for="height">Height</label>
+        <input type="number" id="height" name="height"/>
+      </div>
+      <div class="row weight__row">
+        <label for="weight">Weight</label>
+        <input type="number" id="weight" name="weight"/>
+      </div class="gender__flex">
+      <div class="row gender__row">
+        <span>Gender</span>
+        <div class="gender">
+          <label for="male">Male</label>
+          <input type="radio" checked name="gender" id="male" value="male"/><br />
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="female" value="female"/><br />
+        </div>
+      </div>
+      <div class="row">
+        <label for="country">Country:</label>
+
+        <select id="country" selected="other" name="country">
+          <option value="other">Other</option>
+          <option value="pl">Poland</option>
+          <option value="en">U.K.</option>
+          <option value="de">Germany</option>
+          <option value="usa">USA</option>
+        </select>
+      </div>
+      <div class="row agree__row">
+        <label class="agreeCheckbox" for="agree">
+        <input class="input1" type="checkbox" name="checkbox" value="check" id="agree" /> 
+        <p class="tekst1">I have read and agree to the Terms and Conditions and Privacy Policy</p>
+      </label>
+      </div>
+      <button>Submit</button>
+    </form>
+    <div id="result" style="display: none;">
+      <div class="row row2">
+        <p>Name:</p>
+        <div class="results2">
+        <p id="resultName"></p>
+      </div>
+      </div>
+      <div class="row row2">
+        <p>Surname:</p>
+        <p id="resultSurname"></p>
+      </div>
+      <div class="row row2">
+        <p>Email:</p>
+        <p id="resultEmail"></p>
+      </div>
+      <div class="row row2">
+        <p>Telephone:</p>
+        <p id="resultTelephone"></p>
+      </div>
+      <div class="row row2">
+        <p>Date of Birth:</p>
+        <p id="resultBirth"></p>
+      </div>
+      <div class="row row2">
+        <p>Age:</p>
+        <p id="resultAge"></p>
+      </div>
+      <div class="row row2">
+        <p>Height:</p>
+        <p id="resultHeight"></p>
+      </div>
+      <div class="row row2">
+        <p>Weight:</p>
+        <p id="resultWeight"></p>
+      </div>
+      <div class="row row2">
+        <p>Gender:</p>
+        <p id="resultGender"></p>
+      </div>
+      <div class="row country row2">
+        <p>Country:</p>
+        <p id="resultCountry"></p>
+      </div>
+      <div class="row row2">
+        <p>Did accept rules?:</p>
+        <p id="resultAgree"></p>
+      </div>
+    </div>
+  </div>
+  
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

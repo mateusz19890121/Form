@@ -1,0 +1,16 @@
+{
+    "name": "mateusz/hello",
+    "description": "First composer project",
+    "type": "metapackage",
+    "license": "freewere",
+    "authors": [
+        {
+            "name": "Mateusz Es",
+            "email": "blade1989@o2.pl"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "swiftmailer/swiftmailer": "^6.3@dev"
+    }
+}
